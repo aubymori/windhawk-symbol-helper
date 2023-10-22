@@ -58,6 +58,7 @@ class CMainDlg : public CDialogImpl<CMainDlg>,
     HACCEL m_accelerator = nullptr;
     CEditView m_resultsEdit;
     CFont m_resultsEditFont;
+    CFont m_dialogFont;
 
     std::optional<std::jthread> m_enumSymbolsThread;
     CString m_enumSymbolsResult;

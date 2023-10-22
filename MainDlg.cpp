@@ -164,7 +164,8 @@ BOOL CMainDlg::OnInitDialog(CWindow wndFocus, LPARAM lInitParam) {
                          WS_EX_CLIENTEDGE, IDC_RESULTS);
 
     CLogFont fontAttributes(AtlGetDefaultGuiFont());
-    wcscpy_s(fontAttributes.lfFaceName, L"Consolas");
+    wcscpy_s(fontAttributes.lfFaceName, L"Courier New");
+    fontAttributes.SetHeight(10);
     m_resultsEditFont = fontAttributes.CreateFontIndirect();
     m_resultsEdit.SetFont(m_resultsEditFont);
 
